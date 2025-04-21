@@ -6,9 +6,6 @@ import { UpgradeModule } from '@angular/upgrade/static';
 
 // Bootstrap Angular
 platformBrowserDynamic()
-  .bootstrapModule(AppModule)
-  .then(ref => {
-    const upgrade = ref.injector.get(UpgradeModule);
-   // upgrade.bootstrap(document.body, ['legacyApp']);
-  });
+  .bootstrapModule(AppModule);
+  
 
