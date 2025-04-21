@@ -10,7 +10,7 @@ import angular from 'angular';
 @NgModule({
   declarations: [AppComponent, AngularJsWrapperComponent],
   imports: [BrowserModule, CommonModule, UpgradeModule],
-  providers: [{ provide: '$scope', useExisting: '$rootScope' }], // REQUIRED
+  providers: [{ provide: '$scope', useExisting: '$rootScope' }], 
 })
 export class AppModule implements DoBootstrap {
   constructor(private upgrade: UpgradeModule) {}
