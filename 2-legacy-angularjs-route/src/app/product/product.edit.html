@@ -1,0 +1,12 @@
+<h2 class="form-heading">Edit Product</h2>
+
+<form class="edit-form" ng-submit="vm.saveProduct()">
+  <label for="productName">Product Name</label>
+  <input type="text" id="productName" ng-model="vm.product.name" placeholder="Enter product name" />
+
+  <label for="productPrice">Price ($)</label>
+  <input type="number" id="productPrice" ng-model="vm.product.price" placeholder="Enter price" />
+
+  <button type="submit">Update</button>
+  <button type="button" class="btn-secondary" ng-click="vm.goBack()">Back</button>
+</form>

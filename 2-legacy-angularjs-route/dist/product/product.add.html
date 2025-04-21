@@ -1,0 +1,6 @@
+<h2>Add Product</h2>
+<form ng-submit="vm.saveProduct()">
+  <input type="text" ng-model="vm.product.name" placeholder="Product Name" required />
+  <input type="number" ng-model="vm.product.price" placeholder="Price" required />
+  <button type="submit">Save</button>
+</form>

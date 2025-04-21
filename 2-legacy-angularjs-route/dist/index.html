@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AngularJS with TypeScript</title>
+  <!-- below css auto loading from web pack so commented code -->
+  <!-- <link rel="stylesheet" href="styles.css"> --> 
+<script defer src="app.js"></script></head>
+<body>
+  <!-- <div ng-app="myApp">
+    <div ng-controller="MyController">
+      <h1>{{ message }}</h1>
+      <button>Click Me</button>
+    </div>
+  </div> -->
+  <div ng-app="myApp">
+    <div ng-view></div> <!-- This will render the views defined by routes -->
+  </div>
+   <!-- below js auto loading from web pack so commented code -->
+  <!-- <script src="dist/app.js"></script> -->
+</body>
+</html>

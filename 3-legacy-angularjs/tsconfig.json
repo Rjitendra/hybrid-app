@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES6", 
+    "module": "ESNext", // ✅ or "CommonJS"
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "types": ["angular"],
+    "lib": ["dom", "es2015"]   // Add es2015 to include newer JS features
+  },
+  "include": ["src/**/*"]
+}

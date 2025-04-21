@@ -1,0 +1,22 @@
+<h2 class="product-heading">Product List</h2>
+<a class="add-button" href="#!/products/add">Add Product</a>
+
+<ul class="product-list">
+  <li class="product-item" ng-repeat="p in vm.products">
+    <span class="product-info">{{ p.name }} - ${{ p.price }}</span>
+    <a class="edit-link" href="#!/products/edit/{{p.id}}">Edit</a>
+    <button class="delete-button" ng-click="vm.deleteProduct(p.id)">Delete</button>
+  </li>
+</ul>
+
+<!-- Modal Popup -->
+<div class="modal-backdrop" ng-show="vm.showDeleteModal">
+  <div class="modal">
+    <h3>Confirm Delete</h3>
+    <p>Are you sure you want to delete this product?</p>
+    <div class="modal-actions">
+      <button class="btn-danger" ng-click="vm.deleteConfirmed()">Yes, Delete</button>
+      <button class="btn-cancel" ng-click="vm.closeDeleteModal()">Cancel</button>
+    </div>
+  </div>
+</div>

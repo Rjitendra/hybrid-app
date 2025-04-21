@@ -1,0 +1,9 @@
+<h2>Product List</h2>
+<a href="/products/add">Add Product</a>
+<ul>
+  <li ng-repeat="p in vm.products">
+    {{ p.name }} - ${{ p.price }}
+    <a href="/products/edit/{{p.id}}">Edit</a>
+    <button ng-click="vm.deleteProduct(p.id)">Delete</button>
+  </li>
+</ul>
